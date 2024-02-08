@@ -261,9 +261,9 @@ in
             # Enable some network drivers
             NET_VENDOR_INTEL Y
             PTP_1588_CLOCK_OPTIONAL y
-            IGB y
-            IXGB y
-            IXGBE y
+            IGB n
+            IXGB n
+            IXGBE n
             E1000 n
             E1000E n
 
