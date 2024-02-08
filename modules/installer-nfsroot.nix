@@ -259,13 +259,12 @@ in
         linux_latest = p.linux_latest.override {
           extraConfig = ''
             # Enable some network drivers
-            NET_VENDOR_INTEL Y
-            PTP_1588_CLOCK_OPTIONAL y
-            IGB n
-            IXGB n
-            IXGBE n
-            E1000 n
-            E1000E n
+            r8169 y
+            # IGB y
+            # IXGB y
+            # IXGBE y
+            # E1000 y
+            # E1000E y
 
             # Enable nfs root boot
             UNIX y # http://www.linux-mips.org/archives/linux-mips/2006-11/msg00113.html
