@@ -259,6 +259,7 @@ in
         linux_latest = p.linux_latest.override {
           extraConfig = ''
             # Enable some network drivers
+            PTP_1588_CLOCK_OPTIONAL y
             IGB y
             IXGB y
             IXGBE y
