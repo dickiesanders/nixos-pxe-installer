@@ -259,7 +259,6 @@ in
         linux_latest = p.linux_latest.override {
           extraConfig = ''
             # Enable some network drivers
-            R8169 Y
             # IGB y
             # IXGB y
             # IXGBE y
